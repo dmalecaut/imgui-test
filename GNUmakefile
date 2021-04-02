@@ -20,7 +20,7 @@ $(PROG): $(OBJ)
 %.o: $(SRC)/%cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-$(IMGUI):
+init:
 	git submodule update --init --recursive
 
 clean:
